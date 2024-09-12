@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ChikaChika</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="btnContainer">
+                <button id="startBtn" class="btn">시작하기</button>
+                <button id="resetBtn" class="btn">초기화</button>
+                <button id="testBtn" style="display: none">test</button>
+            </div>
+            <h1 class="title">양치질 분석기</h1>
+            <div class="guideContainer"></div>
+        </div>
+        <div class="teethContainer">
+            <div class="teethSection column">
+                <div id="ul_outside" class="columnTeeth teeth"></div>
+                <div id="ul_above" class="columnTeeth teeth"></div>
+                <div id="ul_inside" class="columnTeeth teeth"></div>
+            </div>
+
+            <div class="teethSection row">
+                <div id="uf_outside" class="rowTeeth teeth"></div>
+                <div id="uf_inside" class="rowTeeth teeth"></div>
+                <div id="errorMsg" class="errorMsg msg" style="display: none"></div>
+                <h2 id="alertMsg" class="msg"></h2>
+            </div>
+
+            <div class="teethSection column">
+                <div id="ur_inside" class="columnTeeth teeth"></div>
+                <div id="ur_above" class="columnTeeth teeth"></div>
+                <div id="ur_outside" class="columnTeeth teeth"></div>
+            </div>
+        </div>
+
+        <div class="imgContainer">
+            <div class="upper">
+                <div id="ulTeeth" class="alertBox col left"></div>
+                <div id="ufTeeth" class="alertBox row center"></div>
+                <div id="urTeeth" class="alertBox col right"></div>
+            </div>
+            <img src="./img/teeth.png" class="img" alt="teeth.image">
+            <div class="lower">
+                <div id="llTeeth" class="alertBox col left"></div>
+                <div id="lfTeeth" class="alertBox row center"></div>
+                <div id="lrTeeth" class="alertBox col right"></div>
+            </div>
+        </div>
+
+        <div class="teethContainer below">
+            <div class="teethSection column">
+                <div id="ll_outside" class="columnTeeth teeth"></div>
+                <div id="ll_above" class="columnTeeth teeth"></div>
+                <div id="ll_inside" class="columnTeeth teeth"></div>
+            </div>
+
+            <div class="teethSection row">
+                <div id="lf_inside" class="rowTeeth teeth"></div>
+                <div id="lf_outside" class="rowTeeth teeth"></div>
+            </div>
+
+            <div class="teethSection column">
+                <div id="lr_inside" class="columnTeeth teeth"></div>
+                <div id="lr_above" class="columnTeeth teeth"></div>
+                <div id="lr_outside" class="columnTeeth teeth"></div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./js/socket.js"></script>
+<link rel="stylesheet" href="./css/style.css" type="text/css">
+</html>
